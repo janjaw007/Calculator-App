@@ -3,3 +3,29 @@
   margin: 0;
   padding: 0;
 }
+
+.calculator-title {
+  text-align: center;
+}
+
+.calculator-body {
+  margin: 0 auto;
+  padding: 0.5rem;
+  border: 1px solid red;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  width: 80dvw;
+  height: 80dvh;
+}
+
+.calculator-display {
+  border: 1px solid gray;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+.calculator-button {
+  border: 1px solid yellowgreen;
+}
