@@ -16,6 +16,8 @@
   gap: 0.5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  max-width: 768px;
+  /* max-height: 600px; */
   width: 80dvw;
   height: 80dvh;
 }
@@ -28,4 +30,17 @@
 
 .calculator-button {
   border: 1px solid yellowgreen;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  transition: all 0.1s ease-in;
+}
+
+.calculator-button:active {
+  background-color: bisque;
+  color: azure;
+}
+
+.calculator-button > span {
+  pointer-events: none;
 }
