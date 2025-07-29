@@ -15,7 +15,7 @@
   display: grid;
   gap: 0.5rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   max-width: 768px;
   /* max-height: 600px; */
   width: 80dvw;
@@ -26,8 +26,17 @@
   border: 1px solid gray;
   grid-column-start: 1;
   grid-column-end: 5;
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 3rem;
+  padding-right: 1rem;
 }
-
+.clear-btn {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
 .calculator-button {
   border: 1px solid yellowgreen;
   display: grid;
@@ -39,8 +48,4 @@
 .calculator-button:active {
   background-color: bisque;
   color: azure;
-}
-
-.calculator-button > span {
-  pointer-events: none;
 }
